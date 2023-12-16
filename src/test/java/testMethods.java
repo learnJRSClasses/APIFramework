@@ -13,4 +13,27 @@ public class testMethods extends Base{
         Response res = APIMethods.postAPI(payLoad);
         Assert.assertEquals(res.getStatusCode(), 201);
     }
+
+
+    @Test
+    public void testCase2()
+    {Map<String, Object> payLoad = PostpayLoad.getPayloadfromMapforReqRES( "Shobhit" ,"QA Lead");
+        Response res = APIMethods.postAPI( payLoad) ;
+        Assert.assertEquals(res.getStatusCode(), 201);
+
+    }
+
+    @Test
+    public void testCase3()
+    {
+        Response res = APIMethods.getAPI();
+        System.out.println(res.getStatusCode());
+
+
+    }
 }
+
+// Test Case - Put req , payload , end point
+// End point
+//PayLoad
+//headers

@@ -1,6 +1,8 @@
 
 {
-  "getEndPoint" : "https://petstore.swagger.io/v2/pet/findByStatus?status=sold" ,
-  "postEndPoint" : "https://reqres.in/api/users",
-  "putEndPoint" : "https://reqres.in/api/users"
+  "baseURL1" : "https://petstore.swagger.io/v2/pet",
+  "baseURl": "https://reqres.in/api",
+  "getEndPoint" : "/findByStatus?status=sold" ,
+  "postEndPoint" : "/users",
+  "putEndPoint" : "/users"
 }

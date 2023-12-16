@@ -23,15 +23,15 @@ public class RestAssuredUtills {
 
     }
 
-   /* @Test
-    public void createMap()
+    public static Response perfromPut(String endpoint, Map<String, Object> Body, Map<String, Object> Heards)
     {
-        Map<String,String> headers = new HashMap<>();
-        headers.put("Accept", "application/json");
-        headers.put("Content-Type", "application/json");
-        headers.put("Authorization", "Bearer ACCESS-TOKEN");
+        return RestAssured.given().log().all()
+                .baseUri(endpoint).body(Body).headers(Heards).put()
+                .then().log().all().extract().response() ;
 
-    }*/
+    }
+
+
 }
 
 //Endpoint - URl

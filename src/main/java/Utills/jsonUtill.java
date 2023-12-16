@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class jsonUtill {
     private static ObjectMapper objectMapper = new ObjectMapper();
-    public static Map<String,Object> getPayload(String jsonFileName) throws IOException
+    public static Map<String,Object> getEndPoint(String jsonFileName) throws IOException
     {
         String fileLocation = System.getProperty("user.dir")+"/src/test/resources" + jsonFileName;
         Map<String,Object> data = objectMapper.readValue(new File(fileLocation), new TypeReference<Map<String, Object>>() {
