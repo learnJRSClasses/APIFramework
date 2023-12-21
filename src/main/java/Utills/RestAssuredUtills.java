@@ -15,6 +15,14 @@ public class RestAssuredUtills {
 
     }
 
+    public static Response perfromPatch(String endpoint, Map<String, Object> Body, Map<String, Object> Heards)
+    {
+        return RestAssured.given().log().all()
+                .baseUri(endpoint).body(Body).headers(Heards).patch()
+                .then().log().all().extract().response() ;
+
+    }
+
     public static Response perfromget(String endpoint)
     {
         return RestAssured.given().log().all()

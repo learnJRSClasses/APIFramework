@@ -3,6 +3,17 @@
   "baseURL1" : "https://petstore.swagger.io/v2/pet",
   "baseURl": "https://reqres.in/api",
   "getEndPoint" : "/findByStatus?status=sold" ,
+  "getEndpointWithoutBody" : "/findByStatus?status=sold" ,
   "postEndPoint" : "/users",
-  "putEndPoint" : "/users"
+  "putEndPoint" : "/users",
+
+
+
+
+
+  "GoRest_baseURL" : "https://gorest.co.in/public/v2",
+  "GoRest_getEndPoint" : "/users",
+  "GoRest_postEndPoint" : "/users",
+  "GoRest_patchEndPoint" : "/users"
+
 }
