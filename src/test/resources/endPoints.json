@@ -1,6 +1,7 @@
 
 {
   "baseURL1" : "https://petstore.swagger.io/v2/pet",
+  "baseURL_User" : "https://petstore.swagger.io/v2/user",
   "baseURl": "https://reqres.in/api",
   "getEndPoint" : "/findByStatus?status=sold" ,
   "getEndpointWithoutBody" : "/findByStatus?status=sold" ,

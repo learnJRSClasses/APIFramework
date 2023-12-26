@@ -15,7 +15,23 @@ public class RestAssuredUtills {
 
     }
 
+    public static Response perfromPost(String endpoint, Object Body, Map<String, Object> Heards)
+    {
+        return RestAssured.given().log().all()
+                .baseUri(endpoint).body(Body).headers(Heards).post()
+                .then().log().all().extract().response() ;
+
+    }
+
     public static Response perfromPatch(String endpoint, Map<String, Object> Body, Map<String, Object> Heards)
+    {
+        return RestAssured.given().log().all()
+                .baseUri(endpoint).body(Body).headers(Heards).patch()
+                .then().log().all().extract().response() ;
+
+    }
+
+    public static Response perfromPatch(String endpoint, Object Body, Map<String, Object> Heards)
     {
         return RestAssured.given().log().all()
                 .baseUri(endpoint).body(Body).headers(Heards).patch()
