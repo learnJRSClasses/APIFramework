@@ -36,3 +36,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+
+#git restore --staged fileName
+
+
+javaFakerTEst.java
+test2.java

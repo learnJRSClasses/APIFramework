@@ -5,9 +5,11 @@ import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
 
-public class APIMethods {
+public class APIMethods extends Base{
     public static Response postAPI(Map<String, Object> payLoad)
     {
+
+
         String baseURL = (String) Base.dataFromJsonFile.get("baseURl") ;
         String endPoint_temp = (String) Base.dataFromJsonFile.get("postEndPoint") ;
         String endpoint = baseURL+endPoint_temp ;
